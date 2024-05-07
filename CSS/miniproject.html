@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        display: none;
+      }
+
+      input[name="Name"]:hover + p {
+        display: inline;
+        background-color: red;
+      }
+
+      input[type="radio"]:checked {
+        width: 15px;
+        height: 15px;
+      }
+
+      input[type="radio"]:checked + label {
+        color: red;
+      }
+      input[required] {
+        border: 2px solid violet;
+      }
+      input[required]:focus {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <form action="">
+      <label>Name</label>
+      <input type="text" size="15" required /><br />
+      <p>Enter your name</p>
+      <label>College:</label>
+      <input type="text" size="15" disabled /><br />
+
+      <label>Primary Email:</label>
+      <input type="email" size="15" required /><br />
+
+      <label>Secondary Email:</label>
+      <input type="email" size="15" /><br />
+
+      <label>Password:</label>
+      <input type="password" size="15" /><br />
+
+      <label>Gender:</label><br />
+
+      <label>Male</label>
+      <input type="radio" name="gender" value="male" />
+
+      <label>Female</label>
+      <input type="radio" name="gender" value="female" />
+
+      <label>Other</label>
+      <input type="radio" name="gender" value="other" />
+
+      <label>Age:</label>
+      <input type="number" name="age" size="3" min="18" max="100" /><br />
+      <label>MOD:</label>
+      <input type="text" value="online" readonly /><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
