@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+      }
       .container {
         border: 5px solid black;
         display: flex;
@@ -13,6 +23,9 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 16px 20px;
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
       }
       .item {
         width: 100px;
@@ -20,37 +33,20 @@
         background-color: yellow;
         border: 2px solid red;
       }
+      .item-1 {
+        flex-grow: 1;
+      }
+      .item-2 {
+        flex-grow: 1;
+      }
+      .item-3 {
+        flex-grow: 1;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
-      <div class="item item-1">Item-1</div>
-      <div class="item item-2">Item-2</div>
-      <div class="item item-3">Item-3</div>
     </div>
   </body>
 </html>
